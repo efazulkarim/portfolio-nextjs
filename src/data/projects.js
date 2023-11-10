@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Marketing Website',
     description: "This web-app was built using Next.js 13. For the design I used tailwind-css.This was built for a local company to promote their brand which is also SEO optimized. It is also mobile-friendly designed. ",
-    image: '/images/5.png',
+    image: '/images/sohagnet',
     tags: ['Next.js', 'React', 'JavaScript', 'Tailwind-CSS'],
     url: 'https://www.sohagnetbd.com/',
     repoType: "private",

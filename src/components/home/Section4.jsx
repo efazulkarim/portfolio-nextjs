@@ -58,7 +58,6 @@ const HomeSection4 = ({ current, setCurrent }) => {
                 />
 
                 <h5 className="font-bold mt-4">{service.title}</h5>
-
                 <p className="mt-4 flex flex-row items-center">
                   {service.level}
                 </p>
