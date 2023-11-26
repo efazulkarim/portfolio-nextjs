@@ -11,28 +11,19 @@ import HomeSection4 from "@/components/home/Section4";
 import HomeSection5 from "@/components/home/Section5";
 import HomeSection6 from "@/components/home/Section6";
 
-const gtagId = process.env.NEXT_PUBLIC_GTAG_ID;
+import Head from "next/head";
 
 export default function Home() {
   const [current, setCurrent] = useState("");
 
   return (
     <PageBox>
-      <Script
-        strategy="worker"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtagId}`}
-      />
-
-      <Script id="google-analytics" strategy="worker">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${gtagId}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
+      <Head>
+        <title>Kazi Efazul Karim</title>
+        <meta name="description" content="Fullstack software engineer based in Bangladesh" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
       <NavBar current={current} />
       <HomeSection1 current={current} setCurrent={setCurrent} />
