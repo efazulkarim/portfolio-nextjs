@@ -30,7 +30,7 @@ const HomeSection4 = ({ current, setCurrent }) => {
     >
       <ConstraintedBox classNames="p-4 py-12">
         <h2 className="text-center mx-auto">
-          Skills <span className="text-[var(--primaryColor)]">I Know</span>
+          Skills <span className="text-[var(--primaryColor)]">I Have</span>
         </h2>
 
         <WrappedBox classes="justify-items-center grid-cols-2 sm:grid-cols-3 mt-12">

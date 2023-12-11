@@ -32,6 +32,17 @@ const projects = [
     repoType: "public",
   },
   {
+    title: "E-commerce Website",
+    description:
+      "An ecommere website was built using Next.js, Typescript, PostgreSQL, and Prisma- ORM for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.Stripe was also integrated to receive payment after successful payment.",
+    icon: "/logo/nextjs.webp",
+    sceenshots: [],
+    githubUrl: "https://github.com/dark-archer1717/next-tailwind-ecommerce",
+    source: "https://store.accretence.com/",
+    repoType: "public",
+    tags: ["Next.js", "Typescript", "Tailwind-CSS", "PostgreSQL", "Prisma- ORM", "Stripe"],
+  },
+  {
     title: "Social Media API",
     description:
       "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
@@ -40,16 +51,6 @@ const projects = [
     githubUrl: "",
     repoType: "private",
     tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
-  },
-  {
-    title: "E-commerce API",
-    description:
-      "An RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
-    icon: "/logo/nodejs.webp",
-    sceenshots: [],
-    githubUrl: "",
-    repoType: "public",
-    tags: ["Node.js", "Express.js", "MongoDB", "Stripe"],
   },
 ];
 

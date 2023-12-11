@@ -1,5 +1,11 @@
 const skills = [
   {
+    title: "Javascript",
+    level: "⭐⭐⭐",
+    icon: "/logo/javascript.png",
+  },
+
+  {
     title: "React.js",
     level: "⭐⭐⭐",
     icon: "/logo/reactjs.webp",
@@ -13,6 +19,11 @@ const skills = [
     title: "Node.js",
     level: "⭐⭐⭐",
     icon: "/logo/nodejs.webp",
+  },
+  {
+    title: "TypeScript",
+    level: "⭐⭐",
+    icon: "/logo/typescript.png",
   },
   {
     title: "React Native",
@@ -39,6 +50,12 @@ const skills = [
     level: "⭐⭐",
     icon: "/logo/mongodb.webp",
   },
+  {
+    title: "PostgreSQL",
+    level: "⭐⭐",
+    icon: "/logo/postgresql.png",
+  },
+
   {
     title: "SASS",
     level: "⭐⭐",
