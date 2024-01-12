@@ -25,20 +25,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9CXBGHF2"></Script>
-        <Script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {dataLayer.push(arguments); }
-          gtag('js', new Date());
 
-          gtag('config', 'G-ZW9CXBGHF2');
-        </Script>
       </Head>
-
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9CXBGHF2"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+            gtag('config', 'G-ZW9CXBGHF2');
+          `}
+      </Script>
       <NavBar current={current} />
       <HomeSection1 current={current} setCurrent={setCurrent} />
       <HomeSection2 current={current} setCurrent={setCurrent} />
-      {/* <HomeSection3 current={current} setCurrent={setCurrent} /> */}
       <HomeSection4 current={current} setCurrent={setCurrent} />
       <HomeSection5 current={current} setCurrent={setCurrent} />
       <HomeSection6 current={current} setCurrent={setCurrent} />
