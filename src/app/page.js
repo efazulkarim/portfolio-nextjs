@@ -6,12 +6,13 @@ import PageBox from "@/components/common/PageBox";
 import NavBar from "@/components/navbar/NavBar";
 import HomeSection1 from "@/components/home/Section1";
 import HomeSection2 from "@/components/home/Section2";
-// import HomeSection3 from "@/components/home/Section3";
 import HomeSection4 from "@/components/home/Section4";
 import HomeSection5 from "@/components/home/Section5";
 import HomeSection6 from "@/components/home/Section6";
-
 import Head from "next/head";
+
+
+
 
 export default function Home() {
   const [current, setCurrent] = useState("");
@@ -23,6 +24,15 @@ export default function Home() {
         <meta name="description" content="Fullstack software engineer based in Bangladesh" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9CXBGHF2"></Script>
+        <Script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZW9CXBGHF2');
+        </Script>
       </Head>
 
       <NavBar current={current} />
