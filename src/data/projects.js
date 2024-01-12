@@ -21,6 +21,17 @@ const projects = [
     id: 1,
   },
   {
+    title: "Faculty Evaluation System",
+    description:
+      "A faculty evaluation system developed using Next.js, Tailwinds-Css, Prisma-ORM and MYSQL Database. Students can review their faculty and see faculty evaluation before choosing a course of the faculty.",
+    icon: "/logo/nextjs.webp",
+    sceenshots: [],
+    url: "https://faculty-seu.vercel.app",
+    githubUrl: "",
+    repoType: "private",
+    tags: ["Next.js", "Prisma-ORM", "MYSQL", "Tailwind-CSS"],
+  },
+  {
     title: 'News App',
     description: "This is a news app built using ReactJs and NewsAPI. The purpose of the project is to develop an application which will display news articles and user can browse news articles",
     image: '/images/3.PNG',
@@ -52,6 +63,7 @@ const projects = [
     repoType: "private",
     tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
   },
+
 ];
 
 export default projects;
