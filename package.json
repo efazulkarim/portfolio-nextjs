@@ -10,6 +10,7 @@
     "push": "git add -A && git commit -m 'update changes and bug fixes' && git push origin master"
   },
   "dependencies": {
+    "@datadog/browser-rum": "^5.9.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
