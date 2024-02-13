@@ -28,18 +28,7 @@ datadogRum.init({
 
 export default function Home() {
   const [current, setCurrent] = useState("");
-  const router = useRouter();
 
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      datadogRum.startView(url); // Track page view on route change
-    };
-
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
 
   return (
     <PageBox>
