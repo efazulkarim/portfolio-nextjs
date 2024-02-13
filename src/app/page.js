@@ -1,6 +1,7 @@
+// Use client-side indication for clarity and import useEffect
 "use client";
+import { useEffect, useState } from "react"; // Added useEffect to the import
 import { useRouter } from "next/router";
-import { useState } from "react";
 import PageBox from "@/components/common/PageBox";
 import NavBar from "@/components/navbar/NavBar";
 import HomeSection1 from "@/components/home/Section1";
@@ -25,21 +26,16 @@ datadogRum.init({
   defaultPrivacyLevel: 'mask-user-input',
 });
 
-
-
-
 export default function Home() {
   const [current, setCurrent] = useState("");
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      // Track page view on route change
-      datadogRum.startView(url);
+      datadogRum.startView(url); // Track page view on route change
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
-
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
@@ -52,8 +48,6 @@ export default function Home() {
         <meta name="description" content="Fullstack software engineer based in Bangladesh" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
-
-
       </Head>
       <NavBar current={current} />
       <HomeSection1 current={current} setCurrent={setCurrent} />
