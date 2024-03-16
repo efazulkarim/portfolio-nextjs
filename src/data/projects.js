@@ -15,7 +15,7 @@ const projects = [
     description: "This web-app was built using Next.js 13. For the design I used tailwind-css.This was built for a local company to promote their brand which is also SEO optimized. It is also mobile-friendly designed. ",
     image: '/images/sohagnet',
     tags: ['Next.js', 'React', 'JavaScript', 'Tailwind-CSS'],
-    url: 'https://www.sohagnetbd.com/',
+    url: 'https://stnetbd.vercel.app/',
     repoType: "private",
     icon: "/logo/nextjs.webp",
     id: 1,
@@ -26,7 +26,7 @@ const projects = [
       "A faculty evaluation system developed using Next.js, Tailwinds-Css, Prisma-ORM and MYSQL Database. Students can review their faculty and see faculty evaluation before choosing a course of the faculty.",
     icon: "/logo/nextjs.webp",
     sceenshots: [],
-    url: "https://faculty.apppulse.dev/",
+    url: "https://faculty-seu-b80e00943728.herokuapp.com/",
     githubUrl: "",
     repoType: "private",
     tags: ["Next.js", 'React', 'JavaScript', "Prisma-ORM", "MYSQL", "Tailwind-CSS"],
@@ -54,14 +54,14 @@ const projects = [
     tags: ["Next.js", "Typescript", "Tailwind-CSS", "PostgreSQL", "Prisma- ORM", "Stripe"],
   },
   {
-    title: "Social Media API",
+    title: "GlamAura",
     description:
-      "An RESTful API developed using Node.js, Express.js and MongoDB to integrate backend and frontend with ease.",
-    icon: "/logo/nodejs.webp",
+      "A blog website for women built using Next.js, React-Bootstrap, and MDX.Users can read blogs, and share opinions in the comment section. Admin can add, edit, and delete blogs.",
+    icon: "/logo/nextjs.webp",
     sceenshots: [],
-    githubUrl: "",
-    repoType: "private",
-    tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
+    url: "https://glamaura.me/",
+    repoType: "public",
+    tags: ["Next.js", "React-bootstrap", "MDX"],
   },
 
 ];
