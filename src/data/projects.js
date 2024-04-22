@@ -28,8 +28,17 @@ const projects = [
     icon: "/logo/nextjs.webp",
     sceenshots: [],
     url: "https://glamaura.me/",
-    repoType: "public",
+    repoType: "private",
     tags: ["Next.js", "React-bootstrap", "MDX"],
+  },
+  {
+    title: "Agency Website",
+    description: "This project is built using Next.js, Tailwind-CSS, and Strapi. The website is for a software agency. The website has a blog section, services section, and contact form. The admin can add, edit, and delete blogs, services, and contact form.",
+    icon: "/logo/nextjs.webp",
+    sceenshots: [],
+    url: "https://webidentitysolutions.tech/",
+    repoType: "private",
+    tags: ["Next.js", "Tailwind-CSS", "Strapi"],
   },
   {
     title: "E-commerce Website",

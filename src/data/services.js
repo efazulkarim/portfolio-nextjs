@@ -1,6 +1,6 @@
 const services = [
   {
-    title: "Full-stack Web Development",
+    title: "Full-Stack Web Development",
     image: "/icons/web-dev.webp",
     description:
       "I specialize in delivering visually stunning and user-friendly websites to establish a robust online presence for your business. Whether you need a simple informational site, a complex e-commerce platform, or a CRM solution tailored for real estate, I offer customized web development solutions. Utilizing the latest frameworks and technologies, I create responsive, SEO-friendly websites that deliver a seamless browsing experience across all devices.",
