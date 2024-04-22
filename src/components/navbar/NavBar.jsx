@@ -98,7 +98,7 @@ const NavBar = ({ current }) => {
               blurDataURL="/icon.png"
               className="w-8 lg:w-10 h-auto mr-1"
             />
-            Portfolio
+            Efazul K.
           </Link>
 
           <div className="w-full hidden lg:flex items-center justify-end flex-1 list-none">
