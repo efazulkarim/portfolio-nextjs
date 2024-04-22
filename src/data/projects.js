@@ -16,7 +16,7 @@ const projects = [
       "A faculty evaluation system developed using Next.js, Tailwinds-Css, Prisma-ORM and MYSQL Database. Students can review their faculty and see faculty evaluation before choosing a course of the faculty.",
     icon: "/logo/nextjs.webp",
     sceenshots: [],
-    url: "https://faculty-seu-b80e00943728.herokuapp.com/",
+    url: "https://facultyevaluation.live/",
     githubUrl: "",
     repoType: "private",
     tags: ["Next.js", 'React', 'JavaScript', "Prisma-ORM", "MYSQL", "Tailwind-CSS"],
