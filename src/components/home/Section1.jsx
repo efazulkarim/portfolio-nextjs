@@ -59,10 +59,10 @@ const HomeSection1 = ({ current, setCurrent }) => {
             </p>
 
             <FilledButton
-              label="Let's Talk"
+              label="Get in touch"
               // onClick={onHandleClickTalkBtn}
               onClick={() =>
-                onHandleClickUrl("mailto:efazul.fayad1717@gmail.com")
+                onHandleClickUrl("mailto:hello@efazulkarim.live")
               }
               className="mt-8 min-w-[10rem]"
             />
