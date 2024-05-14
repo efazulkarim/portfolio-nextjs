@@ -54,7 +54,7 @@ const HomeSection6 = ({ current, setCurrent }) => {
               </span>
 
               <p className="text-lg font-semibold ml-2">
-                efazul.fayad1717@gmail.com
+                hello@efazulkarim.live
               </p>
             </Row>
 
