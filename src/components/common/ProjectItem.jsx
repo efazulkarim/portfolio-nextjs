@@ -7,6 +7,8 @@ import Column from "@/components/common/Column";
 import Row from "@/components/common/Row";
 
 const ProjectItem = ({ project }) => {
+  console.log("Project image path:", project.image); // Log the image path
+
   return (
     <Column classes="w-full bg-[var(--textColor10)] p-4 rounded-[var(--borderRadius)] items-center justify-between text-center">
       <Column classes="w-full items-center justify-center">
@@ -77,17 +79,27 @@ const ProjectItem = ({ project }) => {
       <Column classes="w-full mt-8 items-center">
         <p className="text-center">{project.description}</p>
 
+        {project.image && (
+          <div className="w-full mt-4">
+            <Image
+              src={project.image}
+              alt={`screenshot-${project.title}`}
+              width={400}
+              height={300}
+              className="rounded-lg mt-2"
+            />
+          </div>
+        )}
+
         <Row classes="w-full items-center justify-center flex-wrap mt-4">
-          {project.tags.map((tag, i) => {
-            return (
-              <small
-                key={`tag-${i}`}
-                className="bg-[var(--textColor10)] rounded-lg py-[0.45rem] px-[0.75rem] mr-2 mb-2 font-medium"
-              >
-                {tag}
-              </small>
-            );
-          })}
+          {project.tags.map((tag, i) => (
+            <small
+              key={`tag-${i}`}
+              className="bg-[var(--textColor10)] rounded-lg py-[0.45rem] px-[0.75rem] mr-2 mb-2 font-medium"
+            >
+              {tag}
+            </small>
+          ))}
         </Row>
       </Column>
     </Column>

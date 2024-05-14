@@ -1,9 +1,8 @@
 const projects = [
-
   {
     title: 'Marketing Website',
-    description: "This web-app was built using Next.js 13. For the design I used tailwind-css.This was built for a local company to promote their brand which is also SEO optimized. It is also mobile-friendly designed. ",
-    image: '/images/sohagnet',
+    description: "This web-app was built using Next.js 13. For the design I used tailwind-css.This was built for a local company to promote their brand which is also SEO optimized. It is also mobile-friendly designed.",
+    image: '',
     tags: ['Next.js', 'React', 'JavaScript', 'Tailwind-CSS'],
     url: 'https://stnetbd.vercel.app/',
     repoType: "private",
@@ -12,10 +11,9 @@ const projects = [
   },
   {
     title: "Faculty Evaluation System",
-    description:
-      "A faculty evaluation system developed using Next.js, Tailwinds-Css, Prisma-ORM and MYSQL Database. Students can review their faculty and see faculty evaluation before choosing a course of the faculty.",
+    description: "A faculty evaluation system developed using Next.js, Tailwinds-Css, Prisma-ORM and MYSQL Database. Students can review their faculty and see faculty evaluation before choosing a course of the faculty.",
     icon: "/logo/nextjs.webp",
-    sceenshots: [],
+    image: '',
     url: "https://facultyevaluation.live/",
     githubUrl: "",
     repoType: "private",
@@ -23,10 +21,9 @@ const projects = [
   },
   {
     title: "GlamAura",
-    description:
-      "A blog website for women built using Next.js, React-Bootstrap, and MDX.Users can read blogs, and share opinions in the comment section. Admin can add, edit, and delete blogs.",
+    description: "A blog website for women built using Next.js, React-Bootstrap, and MDX.Users can read blogs, and share opinions in the comment section. Admin can add, edit, and delete blogs.",
     icon: "/logo/nextjs.webp",
-    sceenshots: [],
+    image: '/screenshot/Glamaura_Hero.PNG',  // Corrected path
     url: "https://glamaura.me/",
     repoType: "private",
     tags: ["Next.js", "React-bootstrap", "MDX"],
@@ -35,19 +32,18 @@ const projects = [
     title: "Agency Website",
     description: "This project is built using Next.js, Tailwind-CSS, and Strapi. The website is for a software agency. The website has a blog section, services section, and contact form. The admin can add, edit, and delete blogs, services, and contact form.",
     icon: "/logo/nextjs.webp",
-    sceenshots: [],
+    image: '',
     url: "https://webidentitysolutions.tech/",
     repoType: "private",
     tags: ["Next.js", "Tailwind-CSS", "Strapi"],
   },
   {
     title: "E-commerce Website",
-    description:
-      "An ecommere website was built using Next.js, Typescript, PostgreSQL, and Prisma- ORM for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.Stripe was also integrated to receive payment after successful payment.",
+    description: "An ecommere website was built using Next.js, Typescript, PostgreSQL, and Prisma- ORM for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.Stripe was also integrated to receive payment after successful payment.",
     icon: "/logo/nextjs.webp",
-    sceenshots: [],
+    image: '',
     githubUrl: "https://github.com/dark-archer1717/next-tailwind-ecommerce",
-    source: "https://store.accretence.com/",
+    url: "https://store.accretence.com/",
     repoType: "public",
     tags: ["Next.js", "Typescript", "Tailwind-CSS", "PostgreSQL", "Prisma- ORM", "Stripe"],
   },
@@ -56,7 +52,7 @@ const projects = [
     description: "This is a news app built using ReactJs and NewsAPI. The purpose of the project is to develop an application which will display news articles and user can browse news articles",
     image: '/images/3.PNG',
     tags: ['React', 'Javascript', 'Bootstrap', 'NewsAPI'],
-    source: 'https://github.com/dark-archer1717/NewsToday',
+    githubUrl: 'https://github.com/dark-archer1717/NewsToday',
     url: 'https://github.com/dark-archer1717/NewsToday',
     icon: "/logo/reactjs.webp",
     id: 2,
@@ -73,7 +69,6 @@ const projects = [
     icon: "/logo/nextjs.webp",
     id: 0,
   },
-
 ];
 
 export default projects;
