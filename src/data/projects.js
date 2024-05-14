@@ -1,12 +1,12 @@
 const projects = [
   {
     title: "E-commerce Website",
-    description: "An ecommere website was built using Next.js, Typescript, PostgreSQL, and Prisma- ORM for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.Stripe was also integrated to receive payment after successful payment.",
+    description: "An ecommere website was built using Next.js,Redux, PostgreSQL for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.",
     image: '/screenshot/23.png',
     githubUrl: "https://github.com/efazulkarim/next-tailwind-ecommerce",
     url: "https://bonhuerfashion.netlify.app/",
     repoType: "private",
-    tags: ["Next.js", "Typescript", "Tailwind-CSS", "PostgreSQL", "Prisma- ORM", "Supabase", "Stripe"],
+    tags: ["Next.js", "Typescript", "Tailwind-CSS", "Supabase", "Stripe"],
   },
 
   {
