@@ -1,7 +1,7 @@
 class Strings {
   static github = "GitHub";
-  static githubLink = "https://github.com/dark-archer1717";
-  static githubUsername = "dark-archer1717";
+  static githubLink = "https://github.com/efazulkarim";
+  static githubUsername = "efazulkarim";
 
   static linkedIn = "LinkedIn";
   static linkedInLink = "https://www.linkedin.com/in/kazi-efazul-karim-046964202/";

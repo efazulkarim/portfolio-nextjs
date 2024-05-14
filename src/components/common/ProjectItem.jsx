@@ -7,21 +7,20 @@ import Column from "@/components/common/Column";
 import Row from "@/components/common/Row";
 
 const ProjectItem = ({ project }) => {
-  console.log("Project image path:", project.image); // Log the image path
-
   return (
     <Column classes="w-full bg-[var(--textColor10)] p-4 rounded-[var(--borderRadius)] items-center justify-between text-center">
       <Column classes="w-full items-center justify-center">
-        <Row classes="w-[4rem] aspect-square bg-[var(--textColor10)] rounded-full p-[1rem] items-center justify-center">
-          <Image
-            src={project.icon}
-            alt={`project-${project.title}`}
-            width={100}
-            height={100}
-            sizes="100%"
-            loading="lazy"
-          />
-        </Row>
+        {project.image && (
+          <Link href={project.url} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={project.image}
+              alt={`screenshot-${project.title}`}
+              width={700}
+              height={400}
+              className="rounded-lg mt-2"
+            />
+          </Link>
+        )}
 
         <h4 className="font-bold mt-4">{project.title}</h4>
 
@@ -45,8 +44,8 @@ const ProjectItem = ({ project }) => {
           {project.repoType}
         </small>
 
-        <Row classes="w-full items-center justify-center mt-4 gap-2">
-          {project.githubUrl ? (
+        {/*   <Row classes="w-full items-center justify-center mt-4 gap-2">
+          {project.githubUrl && (
             <Link
               href={project.githubUrl}
               aria-label={`${project.title} GitHub URL`}
@@ -58,9 +57,8 @@ const ProjectItem = ({ project }) => {
             >
               <FontAwesomeIcon icon={faGithub} className="text-md" />
             </Link>
-          ) : null}
-
-          {project.url ? (
+          )}
+          {project.url && (
             <Link
               href={project.url}
               aria-label={`${project.title} Project URL`}
@@ -72,24 +70,12 @@ const ProjectItem = ({ project }) => {
             >
               <FontAwesomeIcon icon={faEye} className="text-md" />
             </Link>
-          ) : null}
-        </Row>
+          )}
+        </Row> */}
       </Column>
 
       <Column classes="w-full mt-8 items-center">
         <p className="text-center">{project.description}</p>
-
-        {project.image && (
-          <div className="w-full mt-4">
-            <Image
-              src={project.image}
-              alt={`screenshot-${project.title}`}
-              width={400}
-              height={300}
-              className="rounded-lg mt-2"
-            />
-          </div>
-        )}
 
         <Row classes="w-full items-center justify-center flex-wrap mt-4">
           {project.tags.map((tag, i) => (
