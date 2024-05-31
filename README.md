@@ -1,4 +1,5 @@
 
+```mdx
 ## Overview
 Personal Software Developer portfolio template
 
@@ -15,18 +16,36 @@ Follow these steps to set up the project locally:
 git clone https://github.com/yourusername/project-name.git
 cd project-name
 npm install
+```
 
-### Using yarn
+### Using Yarn
+```bash
 git clone https://github.com/yourusername/project-name.git
 cd project-name
 yarn install
+```
 
-Running the Project
+## Running the Project
 To start the development server, use the following commands:
 
 ### Using npm
+```bash
 npm run dev
+```
 
-### Using yarn
-
+### Using Yarn
+```bash
 yarn dev
+```
+
+## Contributing
+To contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-branch-name`
+5. Create a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
