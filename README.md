@@ -1,7 +1,17 @@
-To install the repo :
 
-npm install || yarn install
+## Overview
+Personal Software Developer portfolio template
 
-To run the project :
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- Node.js (vX.X.X or later)
+- npm (vX.X.X or later) or Yarn (vX.X.X or later)
 
-npm run dev || yarn dev
+## Installation
+Follow these steps to set up the project locally:
+
+### Using npm
+```bash
+git clone https://github.com/yourusername/project-name.git
+cd project-name
+npm install
