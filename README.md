@@ -15,3 +15,18 @@ Follow these steps to set up the project locally:
 git clone https://github.com/yourusername/project-name.git
 cd project-name
 npm install
+
+### Using yarn
+git clone https://github.com/yourusername/project-name.git
+cd project-name
+yarn install
+
+Running the Project
+To start the development server, use the following commands:
+
+### Using npm
+npm run dev
+
+### Using yarn
+
+yarn dev
