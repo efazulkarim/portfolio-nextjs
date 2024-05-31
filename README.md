@@ -1,7 +1,7 @@
 
 ```mdx
 ## Overview
-Personal Software Developer portfolio template
+Software Developer Portfolio Template
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
