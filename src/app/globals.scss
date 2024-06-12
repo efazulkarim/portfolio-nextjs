@@ -7,7 +7,7 @@
   --borderRadius: 0.75rem;
 
   --dialogColor: rgba(32, 39, 47, 1);
-  --bgColor: rgba(23, 28, 34, 1);
+  --bgColor: #030712;
   --lightGrayColor: #ebebeb;
   --lighterGrayColor: #e1e1e1;
 
@@ -106,14 +106,9 @@
   --whiteColor90: rgba(255, 255, 255, 0.9);
   --whiteColor: rgba(255, 255, 255, 1);
 
-  --boxGrad1: linear-gradient(
-    118.18deg,
-    rgb(237, 212, 178) 0.99%,
-    rgb(234, 185, 120) 100%
-  );
+  --boxGrad1: linear-gradient(118.18deg, rgb(237, 212, 178) 0.99%, rgb(234, 185, 120) 100%);
 
-  --boxShadow: 0px 4px 12px -6px rgba(0, 0, 0, 0.1),
-    0px -4px 12px -6px rgba(0, 0, 0, 0.1), -4px 0px 12px -6px rgba(0, 0, 0, 0.1),
+  --boxShadow: 0px 4px 12px -6px rgba(0, 0, 0, 0.1), 0px -4px 12px -6px rgba(0, 0, 0, 0.1), -4px 0px 12px -6px rgba(0, 0, 0, 0.1),
     4px 0px 12px -6px rgba(0, 0, 0, 0.1);
 
   --navBarShadow: 0 0 10px 0 var(--blackColor10);
@@ -134,9 +129,8 @@ body {
 
 body {
   background-color: var(--bgColor);
-  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -380,7 +374,7 @@ h6 {
   }
 
   &::before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     margin: auto;
@@ -462,7 +456,7 @@ h6 {
   }
 
   &::before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     margin: auto;
@@ -580,7 +574,7 @@ h6 {
   transition: all 0.5s ease-in-out;
 
   &::before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     margin: auto;
@@ -739,7 +733,7 @@ h6 {
 }
 
 .arrow::after {
-  content: "";
+  content: '';
   display: inline-block;
   margin-left: 0.28em;
   border-top: 0.42em solid;
@@ -836,7 +830,7 @@ h6 {
   animation: drop-in 500ms ease 200ms backwards;
 
   &::before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     margin: auto;

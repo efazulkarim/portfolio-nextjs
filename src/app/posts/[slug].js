@@ -25,12 +25,18 @@ export async function generateStaticParams() {
   const filenames = fs.readdirSync(postsDirectory);
 
   return filenames.map(filename => ({
-    slug: filename.replace(/\.md$/, ''),
+    params: { slug: filename.replace(/\.md$/, '') },
   }));
 }
 
 export default async function Post({ params }) {
   const post = await getPost(params.slug);
+
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
 
   return (
     <div className="container mx-auto py-12">
