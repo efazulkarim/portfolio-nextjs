@@ -24,6 +24,11 @@ const navMenus = [
     path: "/#contact",
     section: "contact",
   },
+  {
+    title: "Blog",
+    path: "/blog",
+    section: "blog",
+  }
 ];
 
 export default navMenus;

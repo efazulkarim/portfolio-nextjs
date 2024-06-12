@@ -123,7 +123,7 @@ const NavBar = ({ current }) => {
               name="menu-btn"
               aria-label="menu button"
               className="outline-none menu-button"
-              onClick={(_) => toggleMenu()}
+              onClick={toggleMenu}
             >
               {mobileMenuVisible ? (
                 <FontAwesomeIcon

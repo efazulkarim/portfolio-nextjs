@@ -3,15 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/navigation";
 import Dropdown from "@/components/navbar/Dropdown";
 
 const MenuItems = (props) => {
-  const { items, depthLevel, mobileNav, handleCloseMobileMenu, current } =
-    props;
-
+  const { items, depthLevel, mobileNav, handleCloseMobileMenu, current } = props;
+  const router = useRouter();
   const [dropdown, setDropdown] = useState(false);
-
-  let ref = useRef();
+  const ref = useRef();
 
   const handleScroll = (id) => {
     if (!id) return;
@@ -24,6 +23,18 @@ const MenuItems = (props) => {
       top: offsetPosition,
       behavior: "smooth",
     });
+  };
+
+  const handleClick = (path) => {
+    if (path.startsWith('/#')) {
+      // For hash links within the same page
+      const elementId = path.split('#')[1];
+      handleScroll(elementId);
+    } else {
+      // For different page links
+      router.push(path);
+    }
+    handleCloseMobileMenu();
   };
 
   useEffect(() => {
@@ -80,14 +91,11 @@ const MenuItems = (props) => {
         <button
           type="button"
           className={current === items.section ? `selected` : ""}
-          onClick={() => {
-            handleCloseMobileMenu();
-            handleScroll(items.section);
-          }}
+          onClick={() => handleClick(items.path)}
         >
           <p>{items.title}</p>
         </button>
-      )}{" "}
+      )}
     </li>
   );
 };

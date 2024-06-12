@@ -1,7 +1,6 @@
 // Use client-side indication for clarity and import useEffect
 "use client";
 import { useEffect, useState } from "react"; // Added useEffect to the import
-import { useRouter } from "next/router";
 import PageBox from "@/components/common/PageBox";
 import NavBar from "@/components/navbar/NavBar";
 import HomeSection1 from "@/components/home/Section1";
