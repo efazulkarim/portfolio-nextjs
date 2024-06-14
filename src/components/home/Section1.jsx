@@ -46,15 +46,12 @@ const HomeSection1 = ({ current, setCurrent }) => {
       elementRef={homeRef}
     >
       <ConstraintedBox classNames="p-4 pb-16 pt-8 sm:pt-16">
-        <WrappedBox classes="justify-items-stretch">
-          <Column classes="justify-center">
+        <WrappedBox classes="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center md:justify-items-stretch">
+          <Column classes="justify-center order-2 md:order-1">
             <p className="max-w-sm">{About.welcomeText}</p>
-
             <h1 className="text-[var(--primaryColor)]">{About.fullName}</h1>
-
-            <p className="font-semibold max-w-sm">{About.designation}</p>
-
-            <p className="mt-8 max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+            <p className="font-semibold lg:text-xl">{About.designation}</p>
+            <p className="mt-8 max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg text-lg md:text-xl lg:text-2xl leading-relaxed">
               {About.description}
             </p>
 
@@ -87,8 +84,8 @@ const HomeSection1 = ({ current, setCurrent }) => {
             </Column>
           </Column>
 
-          <Row classes="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor60)] aspect-sqaure overflow-hidden my-auto">
-            <Row classes="w-full h-auto items-center justify-center rounded-full bg-transparent border-[0.8rem] border-[var(--primaryColor30)] aspect-sqaure overflow-hidden pointer-events-none">
+          <Row classes="w-[15rem] h-[15rem] md:w-[20rem] md:h-[20rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center md:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor60)] aspect-square overflow-hidden order-1 md:order-2 my-auto">
+            <Row classes="w-full h-auto items-center justify-center rounded-full bg-transparent border-[0.8rem] border-[var(--primaryColor30)] aspect-square overflow-hidden pointer-events-none">
               <Image
                 src={About.avatarUrl}
                 alt="profile"

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import NavBar from "@/components/navbar/NavBar";
 
 async function getPosts() {
   const postsDirectory = path.join(process.cwd(), 'posts');
@@ -26,7 +27,7 @@ export default async function Blog() {
 
   return (
     <div className="container mx-auto py-12">
-      <h1 className="text-4xl font-bold mb-6">Blog</h1>
+
       <ul>
         {posts.map(post => (
           <li key={post.slug} className="mb-4">
