@@ -25,10 +25,13 @@ const HomeSection1 = ({ current, setCurrent }) => {
     window.open(url, "_blank");
   };
 
-  const onHandleClickTalkBtn = () => {
-    if (typeof window === "undefined") return;
-
-    window.open(Strings.telegramLink, "_blank");
+  const onHandleDownload = () => {
+    const link = document.createElement("a");
+    link.href = About.resumeUrl;
+    link.setAttribute("download", "resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   };
 
   useEffect(() => {
@@ -50,19 +53,25 @@ const HomeSection1 = ({ current, setCurrent }) => {
           <Column classes="justify-center order-2 md:order-1">
             <p className="max-w-sm">{About.welcomeText}</p>
             <h1 className="text-[var(--primaryColor)]">{About.fullName}</h1>
-            <p className="font-semibold lg:text-xl">{About.designation}</p>
+            <p className="font-semibold max-w-sm">{About.designation}</p>
             <p className="mt-8 max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg text-lg md:text-xl lg:text-2xl leading-relaxed">
               {About.description}
             </p>
 
-            <FilledButton
-              label="Get in touch"
-              // onClick={onHandleClickTalkBtn}
-              onClick={() =>
-                onHandleClickUrl("mailto:hello@efazulkarim.live")
-              }
-              className="mt-8 min-w-[10rem]"
-            />
+            {/* Button Row */}
+            <Row classes="mt-8 gap-4">
+              <FilledButton
+                label="Get in touch"
+                onClick={() => onHandleClickUrl("mailto:hello@efazulkarim.live")}
+                className=" button button--solid min-w-[128px] md:button--big"
+              />
+
+              <FilledButton
+                label="Resume"
+                onClick={onHandleDownload}
+                className="button button--solid min-w-[128px] md:button--big"
+              />
+            </Row>
 
             <Column classes="mt-8">
               <p className="text-md font-semibold">{About.followText}</p>
@@ -112,3 +121,4 @@ const HomeSection1 = ({ current, setCurrent }) => {
 };
 
 export default HomeSection1;
+
