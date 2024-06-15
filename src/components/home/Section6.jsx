@@ -10,6 +10,7 @@ import Column from "@/components/common/Column";
 import Row from "@/components/common/Row";
 import socialLinks from "@/data/socialLinks";
 import useIsInViewport from "@/hooks/useIsInViewport";
+import projects from './../../data/projects';
 
 const HomeSection6 = ({ current, setCurrent }) => {
   const contactRef = useRef(null);
@@ -76,7 +77,7 @@ const HomeSection6 = ({ current, setCurrent }) => {
           <h3 className="text-center mx-auto mt-12">
             I&apos;m{" "}
             <span className="text-[var(--primaryColor)]">Available</span> for
-            freelancing.
+            contract projects.
           </h3>
         </Column>
       </ConstraintedBox>
