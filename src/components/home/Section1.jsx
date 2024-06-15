@@ -25,15 +25,6 @@ const HomeSection1 = ({ current, setCurrent }) => {
     window.open(url, "_blank");
   };
 
-  const onHandleDownload = () => {
-    const link = document.createElement("a");
-    link.href = About.resumeUrl;
-    link.setAttribute("download", "resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  };
-
   useEffect(() => {
     if (isInView && current !== "about") setCurrent("about");
 
@@ -63,14 +54,15 @@ const HomeSection1 = ({ current, setCurrent }) => {
               <FilledButton
                 label="Get in touch"
                 onClick={() => onHandleClickUrl("mailto:hello@efazulkarim.live")}
-                className=" button button--solid min-w-[128px] md:button--big"
-              />
-
-              <FilledButton
-                label="Resume"
-                onClick={onHandleDownload}
                 className="button button--solid min-w-[128px] md:button--big"
               />
+
+              <Link href={About.resumeUrl} target="_blank">
+                <FilledButton
+                  label="Resume"
+                  className="button button--solid min-w-[128px] md:button--big"
+                />
+              </Link>
             </Row>
 
             <Column classes="mt-8">
@@ -121,4 +113,3 @@ const HomeSection1 = ({ current, setCurrent }) => {
 };
 
 export default HomeSection1;
-
