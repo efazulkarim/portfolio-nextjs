@@ -1,12 +1,21 @@
 const projects = [
   {
-    title: "E-commerce Website",
-    description: "An ecommere website was built using Next.js,Redux, PostgreSQL for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.",
-    image: '/screenshot/23.png',
-    githubUrl: "https://github.com/efazulkarim/next-tailwind-ecommerce",
-    url: "https://bonhuerfashion.netlify.app/",
+    title: "Multi-Agent Research Assistant (Ongoing)",
+    description: "The Multi-Agent AI Research, CRM/Sales, Content, Social Media & Productivity Integration Agent is a comprehensive solution designed to integrate and enhance research, customer relationship management, sales, content creation, social media interactions, and productivity tools. This product leverages advanced AI models and cloud technologies for seamless integration and powerful insights.",
+    url: "",
+    image: '/screenshot/5.png',
     repoType: "private",
-    tags: ["Next.js", "Typescript", "Tailwind-CSS", "Supabase", "Stripe"],
+    tags: ["Next.js", "Typescript", "Tailwind-CSS (NextUI Pro)", "Zustand", "React-Query", "Python", "Django", "Azure", "POSTGRESQL", "Docker", "Kubernetes", "Celery"],
+  }
+  ,
+  {
+    title: "E-mail Validation System",
+    description: "Email validation system built using Next.js, Typescript, Tailwind-CSS, and Python.It includes an admin features dashboard for managing everything. Helps businesses and individuals ensure the validity of their email lists, improving email marketing efficiency and reducing bounce rates.",
+    image: '/screenshot/4.png',
+
+    url: "https://leadsverifier.com/",
+    repoType: "private",
+    tags: ["Next.js", "Typescript", "Tailwind-CSS", "Zustand", "React-Query", "Python", "CodeIgnitor4", "MYSQL"],
   },
 
   {
@@ -20,7 +29,7 @@ const projects = [
   },
   {
     title: "GlamAura",
-    description: "A blog website for women built using Next.js, React-Bootstrap, and MDX.Users can read blogs, and share opinions in the comment section. Admin can add, edit, and delete blogs.",
+    description: "A blog website for women, built with Next.js, React-Bootstrap, and MDX. Users can read and comment on blogs, and admins can manage blog content. Provides a dedicated platform for women to share and engage with content, fostering a supportive community.",
     image: '/screenshot/Glamaura_Hero.PNG',
     url: "https://glamaura.me/",
     repoType: "private",
@@ -36,7 +45,7 @@ const projects = [
   },
   {
     title: 'Marketing Website',
-    description: "This web-app was built using Next.js 13. For the design I used tailwind-css.This was built for a local company to promote their brand which is also SEO optimized. It is also mobile-friendly designed.",
+    description: " A marketing website built with Next.js 13 and Tailwind CSS, designed for a local company to promote their brand with SEO optimization and mobile-friendly design.Boosts the company's online visibility and brand promotion, attracting more customers through improved SEO and responsive design.",
     image: '/screenshot/it.png',
     tags: ['Next.js', 'React', 'JavaScript', 'Tailwind-CSS'],
     url: 'https://stnetbd.vercel.app/',
@@ -44,16 +53,16 @@ const projects = [
     id: 1,
   },
   {
-    title: "Open Source e-commerce",
-    description: "An ecommere website was built using Next.js, Typescript, PostgreSQL, and Prisma- ORM for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.Stripe was also integrated to receive payment after successful payment.",
-    image: '/screenshot/op.png',
+    title: "E-commerce Website",
+    description: "An ecommere website was built using Next.js,Redux, PostgreSQL for storing data, and for the design, Tailwind - CSS was used.It has an admin dashboard to add products to the storefront.",
+    image: '/screenshot/23.png',
     githubUrl: "https://github.com/efazulkarim/next-tailwind-ecommerce",
-    url: "https://github.com/efazulkarim/next-tailwind-ecommerce",
-    repoType: "public",
-    tags: ["Next.js", "Typescript", "Tailwind-CSS", "PostgreSQL", "Prisma- ORM", "Supabase", "Stripe"],
+    url: "https://bonhuerfashion.netlify.app/",
+    repoType: "private",
+    tags: ["Next.js", "Typescript", "Tailwind-CSS", "Supabase", "Stripe"],
   },
   {
-    title: 'News App',
+    title: 'News App (Hobby Project)',
     description: "This is a news app built using ReactJs and NewsAPI. The purpose of the project is to develop an application which will display news articles and user can browse news articles",
     image: '/screenshot/3.PNG',
     tags: ['React', 'Javascript', 'Bootstrap', 'NewsAPI'],
@@ -62,7 +71,7 @@ const projects = [
     repoType: "public",
   },
   {
-    title: 'Airbnb-Clone',
+    title: 'Airbnb-Clone (Hobby Project)',
     description: "This project is full-stack, with server-side rendering and routing. It has a huge set of features: browsing houses, logging in, booking a house, having the logic to determine if dates are already booked, paying the stay using Stripe, and then becoming hosts, adding our own houses with all the details, and selling them!",
     image: '/screenshot/airbnb.png',
     tags: ['Next.js', 'Express.js', 'PostgreSQL', 'Stripe'],
